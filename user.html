@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Registro de Usuarios</title>
+</head>
+<body style="background-color: #800020">
+  <div class="columna-reg">
+    <div class="logo-container-menu">
+        <a href="index.html">
+            <img src="image/logo4.png" alt="logo-pag">
+        </a>
+    </div>
+  </div>
+  <form id="userForm">
+    <div class="user">
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" required>
+
+        <label for="name">Nombre y Apellidos:</label>
+        <input type="text" id="name" required>
+
+        <label for="phone">Teléfono:</label>
+        <input type="tel" id="phone" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" required>
+
+      <div class="link-box">
+        <button id='boton-reg' type="button" onclick="validateAndSubmit()">Enviar</button>
+        <button id='boton-reg' type="button" onclick="resetForm()">Limpiar</button>
+        <button id='boton-reg' type="button" onclick="cancelForm()">Cancelar</button>
+      </div>
+    </div>
+  </form>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,3 +1,71 @@
-<html>
-    
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <!-- utilizamos link para apuntar a nuestro archivo CSS "style.css"-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- para hacer responsive la página añadimos el siguiente meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Práctica final</title>
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="image/logo.jpg" alt="Logo Pizzeria la Margherita">
+            <h1 id="h1-head">Pizzeria la Margherita</h1>
+            <nav>
+                <a href="index.html">INICIO</a>
+                <a href="menu.html">MENÚ</a>
+                <a href="user.html">RESERVAR</a>
+            </nav>
+        </header>
+        <div id="container">
+            <a href="hacerpedido.html"><button id="boton_haz_tu_pedido">haz tu pedido</button></a>
+            <div id="container_encima">
+                <h2>PIZZA</h2>
+                <h2 id="aut">AUTÉNTICA</h2>
+            </div>
+        </div>
+
+        <main>
+            <!-- En esta sección vamos a definir el contenido de las diferentes páginas, de las cuales solo serán funcionales la página 1 y 2 -->
+            <!-- Para ello para dar formato utilizaremos las etiquetas de clase "columnaIz" y "columnaDer-pag" respectivamente -->
+            <!-- Página 1 -->
+            <section id="pagina1">
+                <div id="contenedor_texto">
+                    <h2>SABOR DE ITALIA: ¡DESCARGA AHORA!</h2>
+                    <p>¡Lleva la magia de Italia contigo a todas partes! Imagina poder sumergirte en la rica cultura gastronómica italiana, disfrutar de tus platos preferidos y reservar tu próxima cena romántica en el acto, todo desde tu teléfono. Con nuestra aplicación, eso es solo el principio.Sabor, comodidad y la promesa de una Italia que te acompaña: eso es lo que te brinda nuestra app. Descárgala ahora y comienza a disfrutar del sabor de Italia que tanto amas, con la simplicidad que mereces.</p>
+                </div>
+            </section>
+            <!-- Página 2 -->
+            <section id="pagina2">
+                <div id="main-container"></div>
+                <!-- Google Maps iframe -->
+                <div id="google-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.7407893609535!2d-3.726708484606448!3d40.33258757926131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42288e2b9f5f69%3A0x3ba1159d65a5e90!2sUniversidad%20Carlos%20III%20de%20Madrid%20-%20Campus%20de%20Leganes!5e0!3m2!1sen!2ses!4v1635770823698!5m2!1sen!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <!-- Reseñas (imagen de ejemplo) -->
+                <div id="reseñas-container">
+                    <h2 class="texto-superpuesto">Reseñas</h2>
+                    <div id="reseñas-list"></div>
+                    <textarea id="reseña-input" placeholder="Escribe tu reseña"></textarea>
+                    <button onclick="agregarReseña()">Agregar Reseña</button>
+                </div>>
+
+                <!-- Cuadro de texto (placeholder) -->
+                <div id="text-box">
+                    <h2>INFO</h2>
+                    <p>+34 999 99 99  99</p>
+                    <p>info@gmail.com</p>
+                    <p>Av. de la Universidad, 30, 28911 Leganés, Madrid</p>
+                    <p>@margherita_pizzeria</p>
+                    <p>@margherita_pizzeria</p>
+                    <p>@13:00-23:00</p>
+                </div>
+            </section>
+        </main>
+        <script src="script.js">
+
+        </script>
+    </body>
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <!-- utilizamos link para apuntar a nuestro archivo CSS "style.css"-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- para hacer responsive la página añadimos el siguiente meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estado del pedido</title>
+    </head>
+    <body style="background-color: #800020">
+        <h2 id="pasos">Paso 1 - selección de productos > Paso 2 - revisión del pedido y pago > Paso 3 - estado del pedido</h2>
+        <div class="logo-container-menu">
+            <a href="menu.html">
+                <img src="image/logo4.png" alt="logo-pag">
+            </a>
+        </div>
+        <div class="estadoCont">
+            <p id="pedido">¡Su pedido se ha realizado exitosamente!</p>
+            <p id="contador">10:00</p>
+        </div>
+        <footer>
+            <div class="enlaces">
+                <a href="#">Política de privacidad</a>
+                <a href="#">Contáctanos</a>
+                <a href="#">Redes sociales</a>
+                <a href="#">Aviso legal</a>
+            </div>
+        </footer>
+        <script>
+            let tiempo = 600;
+            const contadorElement = document.getElementById('contador');
+            const intervalo = setInterval(actualizarContador, 1000);
+    
+            function actualizarContador() {
+                const minutos = Math.floor(tiempo / 60);
+                const segundos = tiempo % 60;
+                if (tiempo > 599) {
+                    if (segundos < 10) {
+                        contadorElement.textContent = `${minutos}:0${segundos}`;
+                    } else {
+                        contadorElement.textContent = `${minutos}:${segundos}`;
+                    }
+                } else {
+                    if (segundos < 10) {
+                        contadorElement.textContent = `0${minutos}:0${segundos}`;
+                    } else {
+                        contadorElement.textContent = `0${minutos}:${segundos}`;
+                    }
+                }
+                tiempo--;
+    
+                if (tiempo === 0) {
+                    clearInterval(intervalo);
+                    contadorElement.textContent = '00:00';
+                    contadorElement.style.color = 'red'; // Cambia el color del contador a rojo
+                    pedidoElement.textContent = '¡Tu pedido está en camino!';
+                }
+            }
+    
+            actualizarContador();
+        </script>
+    </body>
+</html>
