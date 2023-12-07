@@ -8,15 +8,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Práctica final</title>
     </head>
-    <body>
+    <body class="index-background">
         <header>
             <img id="logo" src="image/logo.jpg" alt="Logo Pizzeria la Margherita">
             <h1 id="h1-head">Pizzeria la Margherita</h1>
             <nav>
                 <a href="index.html">INICIO</a>
                 <a href="menu.html">MENÚ</a>
-                <a href="user.html">RESERVAR</a>
+                <a href="reservar.html">RESERVAR</a>
             </nav>
+            <button id="hamburguesa">&#9776;</button>
+            <div id="container-links">
+                <div class="link"><a href="index.html" class="texto-link">Inicio</a></div>
+                <div class="link"><a href="hacerpedido.html" target="_blank" class="texto-link">Hacer un pedido</a></div>
+                <div class="link"><a href="menu.html" target="_blank" class="texto-link">Menu</a></div>
+                <div class="link"><a href="usuario.html" target="_blank" class="texto-link">Registrate</a></div>
+                <div class="link"><a href="reservar.html" target="_blank" class="texto-link">Reservar una mesa</a></div>
+                <div class="link"><a href="informacion.html" target="_blank" class="texto-link">Contacto</a></div>
+            </div>
         </header>
         <div id="container">
             <a href="hacerpedido.html"><button id="boton_haz_tu_pedido">haz tu pedido</button></a>
@@ -64,6 +73,7 @@
                 </div>
             </section>
         </main>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="script.js">
 
         </script>

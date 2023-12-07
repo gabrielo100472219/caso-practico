@@ -8,15 +8,12 @@ body, html {
     background-color: #E6DBC9;
 }
 
-body {
-    background-image: url(image/pizzafondo.jpg);
-    background-size: cover; /* La imagen se ajustará para cubrir todo el fondo */
-    background-position: center; /* La imagen se centrará en el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.index-background {
+    background-image: url(image/pizzafondo.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 
 
 /*tipos de fuente*/
@@ -203,6 +200,212 @@ a {
     top: -50%; /* Ajusta según sea necesario */
     color: #fff;
     font-size: 18px;
+}
+
+/* Estilo de la caja del contador */
+.header-menu {
+    background-color: #333; /* Fondo de color gris oscuro */
+    color: #fff; /* Texto en color blanco */
+    padding: 5px; /* Relleno de 5px en todos los lados */
+    position: fixed; /* Fijo en la parte superior derecha de la ventana */
+    top: 0; /* Alineado en la parte superior */
+    right: 0; /* Alineado en la parte derecha */
+    text-align: right; /* Alineación del texto a la derecha */
+}
+
+/* Estilo del título "Shopping Basket" */
+h1 {
+    font-size: 20px; /* Tamaño de fuente de 20px */
+    margin: 5px 10px 0; /* Márgenes superior, derecho e izquierdo de 5px, 10px y 0px respectivamente */
+}
+
+/* Estilo del contador de elementos */
+#contador-superior-elementos {
+    font-size: 14px; /* Tamaño de fuente de 14px */
+    padding: 3px 6px; /* Relleno de 3px arriba y abajo, 6px a la izquierda y derecha */
+    background-color: #AD2621; /* Fondo de color rojizo */
+    border-radius: 50%; /* Borde redondeado al 50% para formar un círculo */
+    margin-left: 5px; /* Margen a la izquierda de 5px */
+    display: inline-block; /* Se muestra en línea con otros elementos */
+}
+
+/* Estilo de los productos */
+.main-productos {
+    margin: 10px; /* Márgenes de 10px en todos los lados */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+.producto {
+    display: inline-block; /* Se muestra en línea con otros elementos */
+    border: 1px solid #ccc; /* Borde sólido de 1px en color gris claro */
+    padding: 20px; /* Relleno de 20px en todos los lados */
+    width: 10%; /* Ancho del 10% del contenedor */
+    margin: 10px 5px; /* Márgenes superior e inferior de 10px, márgenes izquierdo y derecho de 5px */
+    font-size: 16px; /* Tamaño de fuente de 16px */
+}
+
+/* Estilo de la cantidad de productos y botones */
+.cantidad {
+    display: flex; /* Diseño en caja flexible */
+    align-items: center; /* Elementos centrados verticalmente */
+    justify-content: center; /* Elementos centrados horizontalmente */
+}
+
+button.boton-suma, button.boton-resta {
+    background-color: #AD2621; /* Fondo de color rojizo */
+    color: #fff; /* Texto en color blanco */
+    border: none; /* Sin borde */
+    padding: 5px 10px; /* Relleno de 5px arriba y abajo, 10px a la izquierda y derecha */
+    cursor: pointer; /* Cursor de tipo puntero al pasar el ratón */
+    margin-top: 5%;
+}
+
+.cantidad-producto {
+    padding: 5px; /* Relleno de 5px en todos los lados */
+}
+
+/* Estilo de la barra de progreso */
+#barra-superior-pasos {
+    display: flex; /* Diseño en caja flexible */
+    justify-content: center; /* Elementos centrados horizontalmente */
+    align-items: center; /* Elementos centrados verticalmente */
+    padding: 10px; /* Relleno de 10px en todos los lados */
+}
+
+/* Estilo para cada paso en la barra de progreso */
+.step {
+    width: 50px; /* Ancho de 50px */
+    height: 40px; /* Alto de 40px */
+    border: 2px solid #333; /* Borde sólido de 2px en color gris oscuro */
+    border-radius: 50%; /* Borde redondeado al 50% para formar un círculo */
+    text-align: center; /* Alineación del texto al centro */
+    line-height: 40px; /* Altura de línea de 40px para centrar verticalmente el texto */
+    font-size: 14px; /* Tamaño de fuente de 14px */
+    background-color: #ccc; /* Fondo de color gris claro */
+    color: #333; /* Texto en color gris oscuro */
+    margin: 0 10px; /* Márgenes izquierdo y derecho de 10px */
+}
+
+/* Estilo de la línea divisoria entre pasos */
+.barra-divisor {
+    width: 5%; /* Ancho del 5% del contenedor */
+    height: 2px; /* Alto de 2px */
+    background-color: #333; /* Color de fondo gris oscuro */
+    margin: 0; /* Sin márgenes */
+}
+
+/* Estilo de un paso azul */
+.cambio-azul {
+    background-color: #AD2621; /* Fondo de color rojizo */
+    color: #fff; /* Texto en color blanco */
+}
+
+/* Estilo del botón "Next Step" */
+#boton-siguiente-1-2 {
+    position: fixed; /* Fijo en la ventana */
+    bottom: 20px; /* Alineado en la parte inferior a 20px del borde inferior */
+    right: 20px; /* Alineado en la parte derecha a 20px del borde derecho */
+    z-index: 1; /* Índice z para asegurarse de que el botón esté por encima de otros elementos */
+}
+
+/* Estilo del Paso 2 */
+#paso-2 {
+    display: none; /* Inicialmente oculto */
+    padding: 20px; /* Relleno de 20px en todos los lados */
+    margin: 20px; /* Márgenes de 20px en todos los lados */
+    border-radius: 5px; /* Borde redondeado al 5% para esquinas suavizadas */
+    background-color: #f2f2f2; /* Fondo de color gris claro */
+    border: 1px solid #ccc; /* Borde sólido de 1px en color gris claro */
+}
+
+/* Estilo de la lista de elementos seleccionados en el Paso 2 */
+#lista-productos-seleccionados {
+    list-style: none; /* Sin viñetas de lista */
+    padding: 0; /* Sin relleno */
+}
+
+#lista-productos-seleccionados li {
+    margin: 10px; /* Márgenes de 10px en todos los lados */
+    padding: 5px; /* Relleno de 5px en todos los lados */
+    background-color: #fff; /* Fondo de color blanco */
+    border: 1px solid #ccc; /* Borde sólido de 1px en color gris claro */
+    border-radius: 5px; /* Borde redondeado al 5% para esquinas suavizadas */
+    display: flex; /* Diseño en caja flexible */
+    justify-content: center; /* Elementos centrados horizontalmente */
+    align-items: center; /* Elementos centrados verticalmente */
+}
+
+/* Estilo de la sección "Payment Method" */
+#metodo-pago {
+    background-color: #f1f1f1; /* Fondo de color gris claro */
+    padding: 20px; /* Relleno de 20px en todos los lados */
+    border: 1px solid #ccc; /* Borde sólido de 1px en color gris claro */
+    margin: 20px; /* Márgenes de 20px en todos los lados */
+    border-radius: 5px; /* Borde redondeado al 5% para esquinas suavizadas */
+}
+
+/* Estilo de la barra de progreso del pedido */
+.barra-superior-pasos {
+    width: 40%; /* Ancho del 40% del contenedor */
+    background-color: #ccc; /* Fondo de color gris claro */
+    height: 20px; /* Alto de 20px */
+    margin-top: 20px; /* Márgenes en la parte superior de 20px */
+    margin-left: 30%; /* Márgenes a la izquierda del 30% */
+    margin-right: 30%; /* Márgenes a la derecha del 30% */
+    border-radius: 5px; /* Borde redondeado al 5% para esquinas suavizadas */
+    overflow: hidden; /* Contenido que desborda se oculta */
+}
+
+.progreso-pedido {
+    width: 0; /* Ancho inicial de 0 */
+    height: 100%; /* Alto del 100% del contenedor */
+    background-color: #AD2621; /* Fondo de color rojizo */
+    transition: width 1s; /* Transición suave de 1 segundo para cambios de ancho */
+}
+
+#container-links {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Fuera de la pantalla */
+    width: 250px; /* Ancho del menú */
+    height: 100%;
+    background-color: #f0f0f0; /* Color de fondo */
+    transition: right 0.3s; /* Transición suave */
+}
+
+#container-links.mostrar {
+    right: 0; /* Muestra el menú */
+}
+
+/* Ajustar el botón de menú de hamburguesa */
+#hamburguesa {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: fixed; 
+    top: 10px; /* Distancia desde la parte superior de la ventana */
+    right: 10px; /* Distancia desde el lado derecho de la ventana */
+    z-index: 1001; /* Aseguramos que esté por encima de otros elementos */
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    background-color:azure; 
+    color: black;
+    border-radius: 5px; 
+    cursor: pointer; 
+
+}
+
+/* Estilos para los enlaces */
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ancho de cada enlace */
+    height:10%; /* Altura de cada enlace */
+    margin: 2%; /* Márgenes entre enlaces */
+    background-color: #f2f1c9; /* Color de fondo de los enlaces */
+    border-radius: 10px; /* Radio de borde para los enlaces */
 }
 
 

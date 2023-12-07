@@ -31,7 +31,7 @@
             let tiempo = 600;
             const contadorElement = document.getElementById('contador');
             const intervalo = setInterval(actualizarContador, 1000);
-    
+
             function actualizarContador() {
                 const minutos = Math.floor(tiempo / 60);
                 const segundos = tiempo % 60;
@@ -49,7 +49,7 @@
                     }
                 }
                 tiempo--;
-    
+
                 if (tiempo === 0) {
                     clearInterval(intervalo);
                     contadorElement.textContent = '00:00';
@@ -57,7 +57,7 @@
                     pedidoElement.textContent = '¡Tu pedido está en camino!';
                 }
             }
-    
+
             actualizarContador();
         </script>
     </body>

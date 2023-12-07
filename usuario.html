@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Registro</title>
+    </head>
+    <body>
+        <h2>Registrar usuario</h2>
+        <form id="userForm">
+            <label for="nombre">Nombre (obligatorio):</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="apellido">Apellido(s) (obligatorio):</label>
+            <input type="text" id="apellido" name="apellido" required><br><br>
+
+            <label for="dni">DNI o NIE (obligatorio):</label>
+            <input type="text" id="dni" name="dni" required><br><br>
+
+            <label for="numeroTelefono">Telefono (9 digitos):</label>
+            <input type="tel" id="numeroTelefono" name="numeroTelefono" required><br><br>
+
+            <label for="email">Email (ej., usuario@dominio.ext):</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <button type="button" id="enviarButton">Enviar</button>
+            <button type="button" id="cancelarButton">Cancelar</button>
+            <button type="button" id="limpiarButton">Limpiar</button>
+        </form>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
