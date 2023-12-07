@@ -363,18 +363,22 @@ button.boton-suma, button.boton-resta {
     transition: width 1s; /* Transición suave de 1 segundo para cambios de ancho */
 }
 
-#container-links {
+#container-links {    
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
     position: fixed;
-    top: 0;
-    right: -100%; /* Fuera de la pantalla */
-    width: 250px; /* Ancho del menú */
+    top: -100%; /* Fuera de la pantalla */
+    right: 0; 
+    width: 100%; /* Ancho del menú */
     height: 100%;
     background-color: #f0f0f0; /* Color de fondo */
-    transition: right 0.3s; /* Transición suave */
+    transition: top 0.3s; /* Transición suave */
 }
 
 #container-links.mostrar {
-    right: 0; /* Muestra el menú */
+    top: 0; /* Muestra el menú */
 }
 
 /* Ajustar el botón de menú de hamburguesa */
@@ -401,11 +405,13 @@ button.boton-suma, button.boton-resta {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%; /* Ancho de cada enlace */
-    height:10%; /* Altura de cada enlace */
-    margin: 2%; /* Márgenes entre enlaces */
-    background-color: #f2f1c9; /* Color de fondo de los enlaces */
+    width: 30%; /* Ancho de cada enlace */
+    height:5%; /* Altura de cada enlace */
+    margin: 1%; /* Márgenes entre enlaces */
     border-radius: 10px; /* Radio de borde para los enlaces */
+    color: #AD2621;
+    font-size: 30px;
+    font-family: "ThunderBold";
 }
 
 
