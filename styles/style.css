@@ -9,7 +9,7 @@ body, html {
 }
 
 .index-background {
-    background-image: url(image/pizzafondo.jpg); 
+    background-image: url(../image/pizzafondo.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -19,21 +19,21 @@ body, html {
 /*tipos de fuente*/
 @font-face {
     font-family: 'Thunder';
-    src: url('fuentes/Thunder-LightHC.woff2') format('woff2'); /* Reemplaza 'ruta-de-la-fuente/thunder-font.woff2' con la ruta real del archivo de la fuente. */
+    src: url('../fuentes/Thunder-LightHC.woff2') format('woff2'); /* Reemplaza 'ruta-de-la-fuente/thunder-font.woff2' con la ruta real del archivo de la fuente. */
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ThunderCurs';
-    src: url('fuentes/Thunder-LightHCItalic.woff2') format('woff2'); /* Reemplaza 'ruta-de-la-fuente/thunder-font.woff2' con la ruta real del archivo de la fuente. */
+    src: url('../fuentes/Thunder-LightHCItalic.woff2') format('woff2'); /* Reemplaza 'ruta-de-la-fuente/thunder-font.woff2' con la ruta real del archivo de la fuente. */
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ThunderBold';
-    src: url('fuentes/Thunder-ExtraBoldLC.woff2') format('woff2'); /* Reemplaza 'ruta-de-la-fuente/thunder-font.woff2' con la ruta real del archivo de la fuente. */
+    src: url('../fuentes/Thunder-ExtraBoldLC.woff2') format('woff2'); /* Reemplaza 'ruta-de-la-fuente/thunder-font.woff2' con la ruta real del archivo de la fuente. */
     font-weight: normal;
     font-style: normal;
 }
@@ -120,7 +120,7 @@ a {
 /*Primera sección*/
 
 #pagina1 {
-    background-image: url(image/fondoSec22.png);
+    background-image: url(../image/fondoSec22.png);
     background-position: center; /* La imagen se centrará en el fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position-x: 20%;
