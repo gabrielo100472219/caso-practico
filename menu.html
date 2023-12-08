@@ -8,57 +8,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Estado del pedido</title>
     </head>
-    <body style="background-color: #800020">
-        <h2 id="pasos">Paso 1 - selección de productos > Paso 2 - revisión del pedido y pago > Paso 3 - estado del pedido</h2>
-        <div class="logo-container-menu">
-            <a href="menu.html">
-                <img src="image/logo4.png" alt="logo-pag">
-            </a>
-        </div>
-        <div class="estadoCont">
-            <p id="pedido">¡Su pedido se ha realizado exitosamente!</p>
-            <p id="contador">10:00</p>
-        </div>
-        <footer>
-            <div class="enlaces">
-                <a href="#">Política de privacidad</a>
-                <a href="#">Contáctanos</a>
-                <a href="#">Redes sociales</a>
-                <a href="#">Aviso legal</a>
+    <body>
+        <header>
+            <img id="logo" src="image/logo.jpg" alt="Logo Pizzeria la Margherita">
+            <h1 id="h1-head">Pizzeria la Margherita</h1>
+            <nav>
+                <a href="index.html">INICIO</a>
+                <a href="menu.html">MENÚ</a>
+                <a href="reservar.html">RESERVAR</a>
+            </nav>
+            <button id="hamburguesa">&#9776;</button>
+            <div id="container-links">
+                <div class="link"><a href="index.html" class="texto-link">INICIO</a></div>
+                <div class="link"><a href="hacerpedido.html" target="_blank" class="texto-link">HACER UN PEDIDO</a></div>
+                <div class="link"><a href="menu.html" target="_blank" class="texto-link">MENU</a></div>
+                <div class="link"><a href="usuario.html" target="_blank" class="texto-link">REGÍSTRATE</a></div>
+                <div class="link"><a href="reservar.html" target="_blank" class="texto-link">RESERVAR UNA  MESA</a></div>
+                <div class="link"><a href="informacion.html" target="_blank" class="texto-link">CONTACTO</a></div>
             </div>
-        </footer>
-        <script>
-            let tiempo = 600;
-            const contadorElement = document.getElementById('contador');
-            const intervalo = setInterval(actualizarContador, 1000);
-
-            function actualizarContador() {
-                const minutos = Math.floor(tiempo / 60);
-                const segundos = tiempo % 60;
-                if (tiempo > 599) {
-                    if (segundos < 10) {
-                        contadorElement.textContent = `${minutos}:0${segundos}`;
-                    } else {
-                        contadorElement.textContent = `${minutos}:${segundos}`;
-                    }
-                } else {
-                    if (segundos < 10) {
-                        contadorElement.textContent = `0${minutos}:0${segundos}`;
-                    } else {
-                        contadorElement.textContent = `0${minutos}:${segundos}`;
-                    }
-                }
-                tiempo--;
-
-                if (tiempo === 0) {
-                    clearInterval(intervalo);
-                    contadorElement.textContent = '00:00';
-                    contadorElement.style.color = 'red'; // Cambia el color del contador a rojo
-                    pedidoElement.textContent = '¡Tu pedido está en camino!';
-                }
-            }
-
-            actualizarContador();
-        </script>
+        </header>
+        <div id="contenedor_menu">
+            <h2>Margherita.......................................................................................................................................................................................................................12.00€</h2>
+            <p>Tomate, mozzarella de búfala y albahaca fresca.</p>
+            <h2>Campesina.......................................................................................................................................................................................................................14.50€</h2>
+            <p>Base de tomate orgánico, mozzarella, Parmigiano Grana Padano, champiñones, tomate siciliano, pimiento verde y rojo, berenjenas y escamas de queso de cabra.</p>
+            <h2>Pepperoni........................................................................................................................................................................................................................13.75€</h2>
+            <p>Tomate, mozzarella, pepperoni picante artesanal y un toque de miel orgánica.</p>
+            <h2>BBQ..................................................................................................................................................................................................................................13.23€</h2>
+            <p>Tomate, mozzarella, ternera, pollo, cebolla morada, cilantro y nuestra salsa BBQ.</p>
+            <h2>Carbonara........................................................................................................................................................................................................................13.50€</h2>
+            <p>Mozzarella, pancetta ibérica, Parmigiano y yema de huevo.</p>
+            <h2>Cuatro Quesos.................................................................................................................................................................................................................15.50€</h2>
+            <p>Tomate, mozzarella, crema suave de gorgonzola, provolone y virutas de Parmigiano.</p>
+        </div>
     </body>
 </html>

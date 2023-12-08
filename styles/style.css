@@ -237,11 +237,18 @@ h1 {
 
 .producto {
     display: inline-block; /* Se muestra en línea con otros elementos */
-    border: 1px solid #ccc; /* Borde sólido de 1px en color gris claro */
+    border: 1px solid #6F261F; /* Borde sólido de 1px en color gris claro */
     padding: 20px; /* Relleno de 20px en todos los lados */
-    width: 10%; /* Ancho del 10% del contenedor */
+    width: 25%; /* Ancho del 10% del contenedor */
     margin: 10px 5px; /* Márgenes superior e inferior de 10px, márgenes izquierdo y derecho de 5px */
+    margin-left: 3.5%;
     font-size: 16px; /* Tamaño de fuente de 16px */
+    text-align: center;
+}
+
+.producto img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* Mantener la proporción original de la imagen */
 }
 
 /* Estilo de la cantidad de productos y botones */
@@ -306,6 +313,18 @@ button.boton-suma, button.boton-resta {
     bottom: 20px; /* Alineado en la parte inferior a 20px del borde inferior */
     right: 20px; /* Alineado en la parte derecha a 20px del borde derecho */
     z-index: 1; /* Índice z para asegurarse de que el botón esté por encima de otros elementos */
+    background-color: #AD2621; /* Color de fondo del botón */
+    font-family: 'ThunderBold', Arial, sans-serif;
+    color: #E6DBC9; /* Color del texto del botón */
+    padding: 1%;
+    border-radius: 15%;
+}
+
+#boton-siguiente-2-3 {
+    background-color: #AD2621; /* Color de fondo del botón */
+    font-family: 'ThunderBold', Arial, sans-serif;
+    color: #E6DBC9; /* Color del texto del botón */
+    border-radius: 15%;
 }
 
 /* Estilo del Paso 2 */
@@ -373,7 +392,7 @@ button.boton-suma, button.boton-resta {
     right: 0; 
     width: 100%; /* Ancho del menú */
     height: 100%;
-    background-color: #f0f0f0; /* Color de fondo */
+    background-color: #E6DBC9; /* Color de fondo */
     transition: top 0.3s; /* Transición suave */
 }
 
@@ -386,14 +405,14 @@ button.boton-suma, button.boton-resta {
     display: block;
     width: 40px;
     height: 40px;
-    position: fixed; 
+    position: absolute; 
     top: 10px; /* Distancia desde la parte superior de la ventana */
     right: 10px; /* Distancia desde el lado derecho de la ventana */
     z-index: 1001; /* Aseguramos que esté por encima de otros elementos */
     display: flex;
     align-items: center; /* Centrado vertical */
     justify-content: center; /* Centrado horizontal */
-    background-color:azure; 
+    background-color: #E6DBC9; 
     color: black;
     border-radius: 5px; 
     cursor: pointer; 
@@ -412,6 +431,25 @@ button.boton-suma, button.boton-resta {
     color: #AD2621;
     font-size: 30px;
     font-family: "ThunderBold";
+}
+
+/*ESTILO DE LA PÁGINA DEL MENÚ*/
+#contenedor_menu {
+    max-width: 90%;
+    margin-left: 3.5%;
+    padding: 20px;
+    background-color: #E6DBC9;
+    color: #AD2621;
+    font-family: 'ThunderBold', Arial, sans-serif;
+    text-align: justify;
+}
+
+#contenedor_menu h2 {
+    text-align: left;
+}
+
+#contenedor_menu p {
+    color: black;
 }
 
 
