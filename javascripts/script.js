@@ -14,13 +14,19 @@ function cargarReseñas() {
   }
 }
 
+let contadorUsuarios = 1;
+const maxUsuarios = 6;
+
 function agregarReseña() {
   const reseñaInput = document.getElementById("reseña-input");
   const nuevaReseña = reseñaInput.value;
 
-  if (nuevaReseña.trim() !== "") {
-    // Obtener el nombre de usuario (puedes implementar tu propio sistema de autenticación)
-    const usuario = "Usuario"; // Puedes cambiar esto según tus necesidades
+  if (nuevaReseña.trim() !== "" && contadorUsuarios <= maxUsuarios) {
+    // Obtener el nombre de usuario con el contador
+    const usuario = "Usuario " + contadorUsuarios;
+
+    // Incrementar el contador
+    contadorUsuarios++;
 
     // Construir la reseña con el nombre de usuario
     const reseñaConUsuario = usuario + ": " + nuevaReseña;
@@ -31,6 +37,11 @@ function agregarReseña() {
 
     // Limpiar el cuadro de texto
     reseñaInput.value = "";
+
+    // Desactivar el cuadro de entrada después de alcanzar el límite
+    if (contadorUsuarios > maxUsuarios) {
+      reseñaInput.disabled = true;
+    }
   }
 }
 
@@ -65,6 +76,20 @@ function setCookie(nombre, valor, días) {
   const expires = "expires=" + fechaExpiracion.toUTCString();
   document.cookie = nombre + "=" + encodeURIComponent(valor) + "; " + expires + "; path=/";
 }
+
+
+/*Función para borrar las cookies cuando se presiona la tecla F5 */
+function borrarCookies() {
+  // Borrar la cookie llamada "reseñas"
+  document.cookie = "reseñas=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+}
+
+window.addEventListener("keydown", function (e) {
+  if (e.key === "F5") {
+    borrarCookies();
+  }
+});
+
 
 //Uso del menu de hamburguesa
 var botonHamburguesa = document.getElementById('hamburguesa');

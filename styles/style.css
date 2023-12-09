@@ -157,49 +157,74 @@ a {
 }
 
 #google-maps {
-    flex: 1; /* Que tome todo el espacio disponible */
     height: 50%; /* Ajusta según sea necesario */
     margin-top: 20%;
     border-radius: 5%;
-    margin-left: 5%;
-    max-width: 20%;
+    margin-left: 10%;
 }
 
 
 #reseñas-container {
-    flex: 1; /* Que tome todo el espacio disponible */
-    padding: 7% 2%;
     text-align: center;
     border-radius: 5%;
     margin-top: 20%;
     background-color: #E6DBC9;
     height: 20%;
-    max-width: 20%;
+    margin-left: 3.8%;
+    padding: 7.5% 8%;
+}
+
+#reseñas-list {
+    position: relative;
+    top: -60%;
+}
+
+#reseña-input {
+    position: absolute;
+    bottom: -200%;
+    right: 46%;
+    color: #000000;
+    font-family: 'ThunderBold', Arial, sans-serif;
+    text-align: center;
+}
+#boton-input {
+    position: absolute;
+    bottom: -204%;
+    right: 48.5%;
+    background-color: #AD2621; /* Color de fondo del botón */
+    color: #E6DBC9;
+    font-family: 'ThunderBold', Arial, sans-serif;
 }
 
 #text-box {
-    flex: 1; /* Que tome todo el espacio disponible */
-    padding: 5% 2%;
-    text-align: center;
+    text-align: center;;
     border-radius: 5%;
     color: #000000;
     background-color: #E6DBC9;
     height: 30%;
-    max-width: 20%;
     margin-top: 20%;
-    margin-right: 5%;
+    margin-right: 10%;
+    padding: 5% 3.4%;
 }
 
 #text-box h2 {
     font-size: 200%;
     font-family: 'ThunderBold', Arial, sans-serif;
+    position: relative;
+    top: -20%;
+}
+
+#text-box p {
+    font-family: 'Thunder', Arial, sans-serif;
+    position: relative;
+    top: -20%;
 }
 
 .texto-superpuesto {
+    font-size: 200%;
+    font-family: 'ThunderBold', Arial, sans-serif;
     position: relative;
-    top: -50%; /* Ajusta según sea necesario */
-    color: #fff;
-    font-size: 18px;
+    top: -60%;
 }
 
 /* Estilo de la caja del contador */
@@ -403,11 +428,11 @@ button.boton-suma, button.boton-resta {
 /* Ajustar el botón de menú de hamburguesa */
 #hamburguesa {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 2.5%;
+    height: 5%;
     position: absolute; 
-    top: 10px; /* Distancia desde la parte superior de la ventana */
-    right: 10px; /* Distancia desde el lado derecho de la ventana */
+    top: 4%; /* Distancia desde la parte superior de la ventana */
+    right: 4%; /* Distancia desde el lado derecho de la ventana */
     z-index: 1001; /* Aseguramos que esté por encima de otros elementos */
     display: flex;
     align-items: center; /* Centrado vertical */
@@ -433,7 +458,8 @@ button.boton-suma, button.boton-resta {
     font-family: "ThunderBold";
 }
 
-/*ESTILO DE LA PÁGINA DEL MENÚ*/
+/*ESTILOS DE LA PÁGINA DEL MENÚ*/
+
 #contenedor_menu {
     max-width: 90%;
     margin-left: 3.5%;
@@ -452,6 +478,46 @@ button.boton-suma, button.boton-resta {
     color: black;
 }
 
+
+/*ESTILOS DE LA PÁGINA DE INFORMACION*/
+
+#contenedor_texto_info {
+    max-width: 18%;
+    padding: 20px;
+    background-color: #AD2621;
+    color: #E6DBC9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 65%;
+    margin-top: 12%;
+    font-family: 'ThunderBold', Arial, sans-serif;
+}
+
+#contenedor_texto_info h2 {
+    text-align: center;
+}
+
+.formulario label,
+.formulario input {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%; /* O ajusta el ancho según tus necesidades */
+}
+
+.formulario textarea {
+    resize: none;
+    height: 100px; /* Ajusta la altura según tus necesidades */
+    width: 100%; /* O ajusta el ancho según tus necesidades */
+    display: block;
+    margin-bottom: 10px;
+}
+
+#boton_info{
+    margin-left: 36%;
+    background-color:#E6DBC9; /* Color de fondo del botón */
+    color: #AD2621;
+    font-family: 'ThunderBold', Arial, sans-serif;
+    cursor: pointer;
+}
 
   /*media queries para hacer la página responsive, utilizaremos cinco breakpoint: para ordenadores portátiles, para ordenadores portátiles pequeños (1226px), para tablets (768px), para (600px) y para móviles*/
 /*media para ordenadores portátiles.*/
