@@ -519,6 +519,14 @@ button.boton-suma, button.boton-resta {
     cursor: pointer;
 }
 
+#informacion-bod{
+    background-image: url(../image/informacionFondo.png);
+    background-position: center; /* La imagen se centrará en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position-x: 40%;
+    background-position-y: 65%;
+}
+
   /*media queries para hacer la página responsive, utilizaremos cinco breakpoint: para ordenadores portátiles, para ordenadores portátiles pequeños (1226px), para tablets (768px), para (600px) y para móviles*/
 /*media para ordenadores portátiles.*/
 @media screen and (max-width: 1600px) {
