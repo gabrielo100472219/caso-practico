@@ -14,8 +14,6 @@ body, html {
     background-repeat: no-repeat;
 }
 
-
-
 /*tipos de fuente*/
 @font-face {
     font-family: 'Thunder';
@@ -38,11 +36,20 @@ body, html {
     font-style: normal;
 }
 
-header {
+#header1 {
     background-color:#6F261F;
     color: #000000;
     padding: 0.5%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header2 {
+    background-color:#6F261F;
+    color: #000000;
+    padding: 0.5%;
+    display: none;
     justify-content: space-between;
     align-items: center;
 }
@@ -157,7 +164,7 @@ a {
 }
 
 #google-maps {
-    height: 50%; /* Ajusta según sea necesario */
+    height: 50%;
     margin-top: 20%;
     border-radius: 5%;
     margin-left: 10%;
@@ -655,25 +662,227 @@ button.boton-suma, button.boton-resta {
 /*media para ordenadores portátiles.*/
 @media screen and (max-width: 1600px) {
 
-  }
+}
 /*media para ordenadores pequeños. Lo que haremos será reducir el tamaño de la fuente para que se pueda adaptar a la pantalla.*/
 @media screen and (max-width: 1300px) {
 
-  }
+    /*ESTILO PARA LA PÁGINA INDEX*/
+    /*PÁGINA PRINCIPAL DE INDEX*/
+    #h1-head {
+        font-size: 100%;
+    }
+
+    #boton_haz_tu_pedido {
+        font-size: 150%;
+        height: 100px;
+        width: 150%;
+    }
+
+    #aut {
+        font-size: 200%;
+    }
+
+    nav {
+        margin-right: 25%;
+    }
+    
+    nav a {
+        margin: 20%;
+        font-size: 100%;
+    }
+
+    #hamburguesa {
+        width: 2.5%;
+        height: 5%;
+        top: 5%; /* Distancia desde la parte superior de la ventana */
+        right: 7%; /* Distancia desde el lado derecho de la ventana */
+    }
+
+    /*PÁGINA 1 DE INDEX*/
+
+    #pagina1 {
+        background-image: url(../image/fondoSec22-ordPeque.png);
+        background-position-x: 30%;
+        background-position-y: 30%;
+    }
+
+    #contenedor_texto {
+        max-width: 18%;
+        padding: 20px;
+        background-color: #AD2621;
+        color: #E6DBC9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-left: 70%;
+        font-family: 'ThunderBold', Arial, sans-serif;
+        text-align: justify;
+    }
+    
+    #contenedor_texto h2 {
+        text-align: center;
+        font-size: 100%;
+    }
+    
+    #contenedor_texto p {
+        color: #fff;
+        font-size: 90%;
+    }
+
+    /*PÁGINA 2 DE INDEX*/
+
+    #google-maps {
+        height: 80%;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    
+    #reseñas-container {
+        margin-top: 5%;
+        height: 48%;
+        margin-left: 2%;
+    }
+    
+    #reseñas-list {
+        position: relative;
+        top: -30%;
+    }
+    
+    #reseña-input {
+        bottom: -200%;
+        right: 42%;
+    }
+    #boton-input {
+        bottom: -205%;
+        right: 45.5%;
+    }
+    
+    #text-box {
+        height: 59.3%;
+        margin-top: 5%;
+        margin-right: 3.8%;
+    }
+    
+    #text-box h2 {
+        font-size: 200%;
+        top: -14%;
+    }
+    
+    #text-box p {
+        top: -14%;
+    }
+    
+    .texto-superpuesto {
+        top: -30%;
+    }
+
+    /*ESTILO PARA LA PÁGINA MENÚ*/
+
+    #contenedor_menu h2{
+        font-size: 100%;
+    }
+
+    #contenedor_menu p{
+        font-size: 100%;
+    }
+
+    /*ESTILO PARA PÁGINA USUARIO*/
+
+    .formulario-usuario {
+        max-width: 30%;
+        padding: 10px;
+        margin-top: 1%;
+    }
+    
+    .formulario-usuario h2 {
+        font-size: 100%;
+    }
+
+    #contenedor-usuario {
+        padding: 5%;
+        border-radius: 5%;
+    }
+    
+    #contenedor-usuario label,
+    #contenedor-usuario input {
+      width: 80%;
+      margin-left: 9%;
+      font-size: 70%;
+    }
+    
+    /*ESTILO PÁGINA HACERPEDIDO*/
+
+    .producto {
+        width: 15%; /* Ancho del 10% del contenedor */
+        margin-left: 4.2%;
+        font-size: 16px;
+    }
+
+    .menu-header h1{
+        font-size: 100%;
+    }
+
+    .menu-header #h1-head{
+        font-size: 100%;
+    }
+
+    /*ESTILO PÁGINA INFORMACIÓN*/
+
+    #informacion-bod{
+        background-image: url(../image/informacionFondo-ordPeque.png);
+        background-position-x: 30%;
+        background-position-y: 90%;
+    }
+
+    #contenedor_texto_info {
+        max-width: 23%;
+        padding: 10px;
+        margin-top: 3%;
+    }
+    
+    .formulario textarea {
+        height: 50px; 
+    }
+
+    /*ESTILO PÁGINA RESERVAR*/
+
+    #reservar-bod{
+        background-image: url(../image/reservarFondo-ordPeque.png);
+        background-position-x: 65%;
+        background-position-y: 90%;
+    }
+    
+    #contenedor_texto_reservar {
+        max-width: 25%;
+        padding: 10px;
+        margin-left: 12%;
+        margin-top: 3%;
+    }
+    
+    #contenedor_texto_reservar h2 {
+        font-size: 120%;
+    }
+}
 
 /*media para tablets.*/
 /*en este caso reducimos el tamaño de los caracteres y del logo de la página web. También hemos sustituido el título de la página principal para que se muestre mejor el logo y el vídeo.*/
 @media screen and (max-width: 768px) {
 
+    #header1 {
+        display: none;
+    }
+
+    #header2 {
+        display: flex;
+    }
+
 }
 /*media para breakpoint 600px*/
 @media screen and (max-width: 600px) {
 
-  }
+}
 
 /*media para móviles.*/
 /*En este caso hemos decidido sustituir la columna de la izquierda y las cajas de la columna de la derecha las hemos puesto en 1 sola columna para que se vea mejor.*/
 /*También, hemos reducido el tamaño de las columnas de las galerías de imágenes y las hemos puesto en una sola columna.*/
 @media screen and (max-width: 350px) {
 
-  }
+}
