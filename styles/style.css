@@ -485,7 +485,7 @@ button.boton-suma, button.boton-resta {
     max-width: 18%;
     padding: 20px;
     background-color: #AD2621;
-    color: #E6DBC9;
+    color: #000000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-left: 65%;
     margin-top: 12%;
@@ -494,27 +494,30 @@ button.boton-suma, button.boton-resta {
 
 #contenedor_texto_info h2 {
     text-align: center;
+    color: #E6DBC9;
 }
 
 .formulario label,
 .formulario input {
   display: block;
   margin-bottom: 10px;
-  width: 100%; /* O ajusta el ancho según tus necesidades */
+  width: 80%; /* O ajusta el ancho según tus necesidades */
+  margin-left: 8%;
 }
 
 .formulario textarea {
     resize: none;
     height: 100px; /* Ajusta la altura según tus necesidades */
-    width: 100%; /* O ajusta el ancho según tus necesidades */
+    width: 80%; /* O ajusta el ancho según tus necesidades */
     display: block;
     margin-bottom: 10px;
+    margin-left: 8%;
 }
 
 #boton_info{
     margin-left: 36%;
-    background-color:#E6DBC9; /* Color de fondo del botón */
-    color: #AD2621;
+    background-color:#AD2621; /* Color de fondo del botón */
+    color: #E6DBC9;
     font-family: 'ThunderBold', Arial, sans-serif;
     cursor: pointer;
 }
@@ -525,6 +528,12 @@ button.boton-suma, button.boton-resta {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position-x: 40%;
     background-position-y: 65%;
+}
+
+#contactForm {
+    background-color: #E6DBC9;
+    border-radius: 5%;
+    padding: 5%;
 }
 
 
@@ -596,6 +605,51 @@ button.boton-suma, button.boton-resta {
     border-radius: 5%;
 }
 
+
+/*ESTILOS DE LA PÁGINA DE USUARIO*/
+
+#usuario-bod{
+    background-image: url(../image/pizzafondo.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulario-usuario {
+    max-width: 25%;
+    padding: 20px;
+    background-color: #AD2621;
+    color: #E6DBC9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 35%;
+    margin-top: 2%;
+    font-family: 'Thunder', Arial, sans-serif;
+}
+
+.formulario-usuario h2 {
+    text-align: center;
+}
+
+#contenedor-usuario {
+    background-color: #E6DBC9;
+    color: #000000;
+    padding: 5%;
+    border-radius: 5%;
+}
+
+#contenedor-usuario label,
+#contenedor-usuario input {
+  display: block;
+  width: 80%; /* O ajusta el ancho según tus necesidades */
+  margin-left: 9%;
+}
+
+#contenedor-usuario button {
+    margin-left: 15%;
+    background-color:#AD2621; /* Color de fondo del botón */
+    color: #E6DBC9;
+    font-family: 'Thunder', Arial, sans-serif;
+    cursor: pointer;
+}
 
   /*media queries para hacer la página responsive, utilizaremos cinco breakpoint: para ordenadores portátiles, para ordenadores portátiles pequeños (1226px), para tablets (768px), para (600px) y para móviles*/
 /*media para ordenadores portátiles.*/

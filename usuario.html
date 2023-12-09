@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Registro</title>
     </head>
-    <body>
+    <body id="usuario-bod">
         <header>
             <img id="logo" src="image/logo.jpg" alt="Logo Pizzeria la Margherita">
             <h1 id="h1-head">Pizzeria la Margherita</h1>
@@ -25,27 +25,31 @@
                 <div class="link"><a href="informacion.html" class="texto-link">CONTACTO</a></div>
             </div>
         </header>
-        <h2>Registrar usuario</h2>
-        <form id="userForm">
-            <label for="nombre">Nombre (obligatorio):</label>
-            <input type="text" id="nombre" name="nombre" required><br><br>
+        <div class="formulario-usuario">
+            <h2>Registrar usuario</h2>
+            <div id="contenedor-usuario">
+                <form id="userForm">
+                    <label for="nombre">Nombre (obligatorio):</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
 
-            <label for="apellido">Apellido(s) (obligatorio):</label>
-            <input type="text" id="apellido" name="apellido" required><br><br>
+                    <label for="apellido">Apellido(s) (obligatorio):</label>
+                    <input type="text" id="apellido" name="apellido" required><br><br>
 
-            <label for="dni">DNI o NIE (obligatorio):</label>
-            <input type="text" id="dni" name="dni" required><br><br>
+                    <label for="dni">DNI o NIE (obligatorio):</label>
+                    <input type="text" id="dni" name="dni" required><br><br>
 
-            <label for="numeroTelefono">Telefono (9 digitos):</label>
-            <input type="tel" id="numeroTelefono" name="numeroTelefono" required><br><br>
+                    <label for="numeroTelefono">Telefono (9 digitos):</label>
+                    <input type="tel" id="numeroTelefono" name="numeroTelefono" required><br><br>
 
-            <label for="email">Email (ej., usuario@dominio.ext):</label>
-            <input type="email" id="email" name="email" required><br><br>
+                    <label for="email">Email (ej., usuario@dominio.ext):</label>
+                    <input type="email" id="email" name="email" required><br><br>
 
-            <button type="button" id="enviarButton">Enviar</button>
-            <button type="button" id="cancelarButton">Cancelar</button>
-            <button type="button" id="limpiarButton">Limpiar</button>
-        </form>
+                    <button type="button" id="enviarButton">Enviar</button>
+                    <button type="button" id="cancelarButton">Cancelar</button>
+                    <button type="button" id="limpiarButton">Limpiar</button>
+                </form>
+            </div>
+        </div>
 
         <script src="javascripts/usuarioscript.js"></script>
         <script src="javascripts/script.js"></script>
