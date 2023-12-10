@@ -48,25 +48,25 @@
       <h2>¡RESERVA TU MESA AHORA!</h2>
       <form id="userForm">
         <div class="reservar-user">
-            <!-- Menú desplegable con las horas disponibles -->
-            <label for="desple">¿Qué te apetece comer?</label>
-            <select id="desple">
-              <option value="opcion1">13:00 - 14:30</option>
-              <option value="opcion2">15:00 - 16:30</option>
-              <option value="opcion3">20:00 - 21:30</option>
-            </select>
-            <!-- Apartado para poner el nombre -->
-            <label for="name">¿Cómo te llamas?</label>
-            <input type="text" id="name" required>
-            <!-- Apartado de texto para poner el teléfono -->
-            <label for="phone">¡Danos tu teléfono y te avisaremos si hay una mesa disponible!</label>
-            <input type="tel" id="phone" required>
-            <!-- Botón para reservar -->
-            <button id='boton-reservar' type="button">Reservar</button>
+          <label for="desple">¿A qué hora te apetece comer?</label>
+          <select id="desple">
+            <option value="13:00">13:00 - 14:30</option>
+            <option value="15:00">15:00 - 16:30</option>
+            <option value="20:00">20:00 - 21:30</option>
+          </select>
+  
+          <label for="name">¿Cómo te llamas?</label>
+          <input type="text" id="name" required>
+  
+          <label for="com">¿Cuántos comensales sois?</label>
+          <input type="tel" id="com" required>
+  
+          <button id='boton-reservar' type="button" onclick="reservarMesa()">Reservar</button>
         </div>
       </form>
     </div>
   </div>
   <script src="javascripts/script.js"></script>
+  <script src="javascripts/reservarscript.js"></script>
 </body>
 </html>
