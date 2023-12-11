@@ -180,17 +180,19 @@
                     <h2>Método de Pago</h2>
                     <form id="form-pago">
                         <label for="tarjeta-credito">Tarjeta de Crédito:</label>
-                        <input type="text" id="tarjeta-credito" name="tarjeta-credito">
+                        <input type="text" id="tarjeta-credito" name="tarjeta-credito" placeholder="Ingrese el número de tarjeta">
                         
                         <label for="vencimiento">Fecha de Vencimiento:</label>
-                        <input type="text" id="vencimiento" name="vencimiento">
+                        <input type="text" id="vencimiento" name="vencimiento" placeholder="MM/YY">
                         
                         <label for="cvv">CVV:</label>
-                        <input type="text" id="cvv" name="cvv">
+                        <input type="text" id="cvv" name="cvv" placeholder="123">
+                        
+                        <button id="pagar-but" type="button" onclick="validarTarjeta()">Pagar</button>
                     </form>
                 </div>
                 <!-- Botón "Siguiente Paso" para Paso 2 -->
-                <button id="boton-siguiente-2-3">Siguiente Paso</button>
+                <button style="display: none;" id="boton-siguiente-2-3">Siguiente Paso</button>
             </div>
             <div id="paso-3" style="display: none;">
                 <h2>Estado del Pedido</h2>

@@ -188,16 +188,16 @@ a {
 
 #reseña-input {
     position: absolute;
-    bottom: -200%;
-    right: 46%;
+    bottom: -198%;
+    right: 47%;
     color: #000000;
     font-family: 'ThunderBold', Arial, sans-serif;
     text-align: center;
 }
 #boton-input {
     position: absolute;
-    bottom: -204%;
-    right: 48.5%;
+    bottom: -202%;
+    right: 49%;
     background-color: #AD2621; /* Color de fondo del botón */
     color: #E6DBC9;
     font-family: 'ThunderBold', Arial, sans-serif;
@@ -357,6 +357,7 @@ button.boton-suma, button.boton-resta {
     font-family: 'ThunderBold', Arial, sans-serif;
     color: #E6DBC9; /* Color del texto del botón */
     border-radius: 15%;
+    margin-left: 90%;
 }
 
 /* Estilo del Paso 2 */
@@ -365,14 +366,18 @@ button.boton-suma, button.boton-resta {
     padding: 20px; /* Relleno de 20px en todos los lados */
     margin: 20px; /* Márgenes de 20px en todos los lados */
     border-radius: 5px; /* Borde redondeado al 5% para esquinas suavizadas */
-    background-color: #f2f2f2; /* Fondo de color gris claro */
-    border: 1px solid #ccc; /* Borde sólido de 1px en color gris claro */
+    background-color: #EFE7DA; /* Fondo de color gris claro */
+    border: 1px solid #EFE7DA; /* Borde sólido de 1px en color gris claro */
+    color: #AD2621;
+    text-align: center;
 }
 
 /* Estilo de la lista de elementos seleccionados en el Paso 2 */
 #lista-productos-seleccionados {
     list-style: none; /* Sin viñetas de lista */
     padding: 0; /* Sin relleno */
+    background-color: #EFE7DA;
+    color: #000000;
 }
 
 #lista-productos-seleccionados li {
@@ -388,14 +393,35 @@ button.boton-suma, button.boton-resta {
 
 /* Estilo de la sección "Payment Method" */
 #metodo-pago {
-    background-color: #f1f1f1; /* Fondo de color gris claro */
+    background-color: #EFE7DA; /* Fondo de color gris claro */
     padding: 20px; /* Relleno de 20px en todos los lados */
-    border: 1px solid #ccc; /* Borde sólido de 1px en color gris claro */
+    border: 1px solid #EFE7DA; /* Borde sólido de 1px en color gris claro */
     margin: 20px; /* Márgenes de 20px en todos los lados */
     border-radius: 5px; /* Borde redondeado al 5% para esquinas suavizadas */
 }
 
+::placeholder {
+    font-size: 120%; /* Tamaño de fuente */
+    font-family: 'ThunderBold', Arial, sans-serif;
+}
+
+#pagar-but {
+    background-color:#AD2621; /* Color de fondo del botón */
+    color: #E6DBC9;
+    font-family: 'ThunderBold', Arial, sans-serif;
+    cursor: pointer;
+}
+
 /* Estilo de la barra de progreso del pedido */
+#paso-3 {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 200%;
+}
+
+#contador {
+    font-size: 200%;
+}
 .barra-superior-pasos {
     width: 40%; /* Ancho del 40% del contenedor */
     background-color: #ccc; /* Fondo de color gris claro */
