@@ -187,36 +187,29 @@ function cargarSeleccionesDeLocalStorage() {
 }
 
 
-//Función para validar la tarjeta de crédito
-
+//Función para validar la tarjeta de crédito, donde comprobamos con expresiones regulares que el número de la tarjeta tenga 16 dígitos, la fecha se escriba MM/YY y el número CVV tenga 3 números.
 function validarTarjeta() {
-    // Obtener los valores de los campos
     var numeroTarjeta = document.getElementById('tarjeta-credito').value.replace(/\s/g, ''); 
     var fechaVencimiento = document.getElementById('vencimiento').value;
     var cvv = document.getElementById('cvv').value;
-
-    // Expresiones regulares para validar formato
+    // Expresiones regulares para validar los distintos campos.
     var regexNumeroTarjeta = /^\d{16}$/;
-    var regexFechaVencimiento = /^(0[1-9]|1[0-2])\/(1[8-9]|2[0-9])$/;
+    var regexFechaVencimiento = /^(0[1-9]|1[0-2])\/(2[4-9]|2[0-9])$/;
     var regexCVV = /^\d{3}$/;
-
     // Validamos que los campos sean válidos, en caso de que no lo sea saldrá un mensaje de error y habrá que introducir un valor válido.
     if (!regexNumeroTarjeta.test(numeroTarjeta)) {
         alert('Ingrese un número de tarjeta válido.');
         return;
     }
-
     if (!regexFechaVencimiento.test(fechaVencimiento)) {
         alert('Ingrese una fecha de vencimiento válida (MM/YY).');
         return;
     }
-
     if (!regexCVV.test(cvv)) {
         alert('Ingrese un código CVV válido (3 dígitos).');
         return;
     }
-
-    // Si todo está bien, aparece pop up de que puedes ver el estado del pedido pulsando el botón de siguiente paso.
+    // Si todo está bien, aparece una alareta de que puedes ver el estado del pedido pulsando el botón de siguiente paso que aparecerá al pulsar el botón de pagar.
     alert('¡Pago aceptado! Puedes ver el estado de tu pedido pulsando el botón "Siguiente paso"');
     document.getElementById('boton-siguiente-2-3').style.display = 'block';
 }

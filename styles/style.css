@@ -528,6 +528,7 @@ button.boton-suma, button.boton-resta {
 #contenedor_texto_info h2 {
     text-align: center;
     color: #E6DBC9;
+    font-family: 'Thunder', Arial, sans-serif;
 }
 
 .formulario label,
@@ -567,6 +568,18 @@ button.boton-suma, button.boton-resta {
     background-color: #E6DBC9;
     border-radius: 5%;
     padding: 5%;
+    
+}#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 
@@ -588,7 +601,7 @@ button.boton-suma, button.boton-resta {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-left: 15%;
     margin-top: 12%;
-    font-family: 'Thunder', Arial, sans-serif;
+    font-family: 'ThunderBold', Arial, sans-serif;
 }
 
 #contenedor_texto_reservar h2 {
@@ -655,11 +668,12 @@ button.boton-suma, button.boton-resta {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-left: 35%;
     margin-top: 2%;
-    font-family: 'Thunder', Arial, sans-serif;
+    font-family: 'ThunderBold', Arial, sans-serif;
 }
 
 .formulario-usuario h2 {
     text-align: center;
+    font-family: 'Thunder', Arial, sans-serif;
 }
 
 #contenedor-usuario {
