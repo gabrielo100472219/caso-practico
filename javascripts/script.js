@@ -18,7 +18,7 @@ let contadorUsuarios = 1;
 const maxUsuarios = 6;
 
 function agregarReseña() {
-  const reseñaInput = document.getElementById("reseña-input");
+  const reseñaInput = document.getElementById("reseña");
   const nuevaReseña = reseñaInput.value;
 
   if (nuevaReseña.trim() !== "" && contadorUsuarios <= maxUsuarios) {
