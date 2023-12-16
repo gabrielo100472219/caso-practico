@@ -240,6 +240,5 @@ function validarTarjeta() {
     }
     // Si todo está bien, aparece una alareta de que puedes ver el estado del pedido pulsando el botón de siguiente paso que aparecerá al pulsar el botón de pagar.
     alert('¡Pago aceptado! Puedes ver el estado de tu pedido pulsando el botón "Siguiente paso"');
-    document.getElementById('boton-anterior-2-3').style.display = 'block';
     document.getElementById('boton-siguiente-2-3').style.display = 'block';
 }
