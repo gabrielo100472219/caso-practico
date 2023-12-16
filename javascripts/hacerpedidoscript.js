@@ -13,8 +13,8 @@ const paso2 = document.getElementById("paso-2"); // Paso 2
 const paso3 = document.getElementById("paso-3"); // Paso 3
 const siguienteBoton12 = document.getElementById("boton-siguiente-1-2"); // Botón "Siguiente Paso de 1 a 2"
 const siguienteBoton23 = document.getElementById("boton-siguiente-2-3"); // Botón "Siguiente Paso de 2 a 3"
-const anteriorBoton23 = document.getElementById("boton-anterior-2-3"); // Botón "Siguiente Paso de 2 a 3"
-const anteriorBoton3 = document.getElementById("boton-anterior-3"); // Botón "Siguiente Paso de 2 a 3"
+const anteriorBoton23 = document.getElementById("boton-anterior-2-3"); // Botón "Paso anterior de 3 a 2"
+const anteriorBoton3 = document.getElementById("boton-anterior-3"); // Botón "Paso anterior de 3"
 const pasosBarraSup = document.getElementById("barra-superior-pasos"); // Barra de progreso
 
     

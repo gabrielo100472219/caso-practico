@@ -1,7 +1,6 @@
 // Botones que están atentos a interacción
 const userForm = document.getElementById("userForm");
 const enviarButton = document.getElementById("enviarButton");
-const cancelarButton = document.getElementById("cancelarButton");
 const limpiarButton = document.getElementById("limpiarButton");
 
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -32,7 +31,27 @@ function validarDNI(value) {
     return letrasValidas.charAt(charIndex) === letter;
 }
 
+// Poner los datos en el formulario
+function populateFormWithSavedData() {
+    // tener los datos guardados en el localStorage
+    const savedNombre = localStorage.getItem("nombre");
+    const savedApellido = localStorage.getItem("apellido");
+    const savedNumeroTelefono = localStorage.getItem("numeroTelefono");
+    const savedEmail = localStorage.getItem("email");
+    const savedDni = localStorage.getItem("dni");
 
+    // Llenar los campos con los datos guardados
+    if (savedNombre) document.getElementById("nombre").value = savedNombre;
+    if (savedApellido) document.getElementById("apellido").value = savedApellido;
+    if (savedNumeroTelefono) document.getElementById("numeroTelefono").value = savedNumeroTelefono;
+    if (savedEmail) document.getElementById("email").value = savedEmail;
+    if (savedDni) document.getElementById("dni").value = savedDni;
+}
+
+// Llamar a la función para poner los datos en el formulario
+document.addEventListener("DOMContentLoaded", populateFormWithSavedData);
+
+// Eventos
 enviarButton.addEventListener("click", () => {
     const nombre = document.getElementById("nombre");
     const apellido = document.getElementById("apellido");
@@ -73,17 +92,9 @@ enviarButton.addEventListener("click", () => {
             localStorage.setItem("dni", dni.value);
 
             alert("Datos guardados correctamente.");
-
-            // Limpiar si esta bien
-            userForm.reset();
         }
      }
  });
-
-cancelarButton.addEventListener("click", () => {
-    // Cerrar la pantalla.
-    window.close();
-});
 
 limpiarButton.addEventListener("click", () => {
     // Limpiar los datos que hay en las casillas.

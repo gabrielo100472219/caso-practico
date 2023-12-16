@@ -331,13 +331,17 @@ h1 {
     justify-content: center; /* Elementos centrados horizontalmente */
 }
 
+.precio-producto {
+    display: inline-block; 
+    margin-bottom: 5%; /* Esto agregará un margen de 10px en todos los lados */
+}
+
 button.boton-suma, button.boton-resta {
     background-color: #AD2621; /* Fondo de color rojizo */
     color: #fff; /* Texto en color blanco */
     border: none; /* Sin borde */
     padding: 5px 10px; /* Relleno de 5px arriba y abajo, 10px a la izquierda y derecha */
     cursor: pointer; /* Cursor de tipo puntero al pasar el ratón */
-    margin-top: 5%;
 }
 
 .cantidad-producto {
@@ -394,11 +398,11 @@ button.boton-suma, button.boton-resta {
 }
 
 #boton-siguiente-2-3 {
+    display: none; /* Inicialmente oculto */
     background-color: #AD2621; /* Color de fondo del botón */
     font-family: 'ThunderBold', Arial, sans-serif;
     color: #E6DBC9; /* Color del texto del botón */
     border-radius: 15%;
-    margin-left: 90%;
 }
 
 #boton-anterior-2-3 {
@@ -752,7 +756,7 @@ button.boton-suma, button.boton-resta {
 }
 
 #contenedor-usuario button {
-    margin-left: 15%;
+    margin-left: 20%;
     background-color:#AD2621; /* Color de fondo del botón */
     color: #E6DBC9;
     font-family: 'Thunder', Arial, sans-serif;
