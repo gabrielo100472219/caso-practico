@@ -417,6 +417,11 @@ button.boton-suma, button.boton-resta {
     margin-right: 80%;
 }
 
+#contenedor-botones {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Estilo del Paso 2 */
 #paso-2 {
     display: none; /* Inicialmente oculto */
@@ -1142,10 +1147,12 @@ button.boton-suma, button.boton-resta {
 
     .menu-header h1{
         font-size: 80%;
+        margin-left: 0%;
     }
 
     .menu-header #h1-head{
         font-size: 100%;
+        margin-left: 0%;
     }
 
     #paso-3 h2{
@@ -1154,6 +1161,10 @@ button.boton-suma, button.boton-resta {
 
     #paso-3 p{
         font-size: 80%; 
+    }
+
+    #contador-superior-elementos {
+        margin-right: 10%;
     }
 
     /*ESTILO PÁGINA INFORMACIÓN*/
@@ -1203,14 +1214,125 @@ button.boton-suma, button.boton-resta {
     }
 
 }
-/*media para breakpoint 600px*/
-@media screen and (max-width: 600px) {
 
-}
 
 /*media para móviles.*/
-/*En este caso hemos decidido sustituir la columna de la izquierda y las cajas de la columna de la derecha las hemos puesto en 1 sola columna para que se vea mejor.*/
-/*También, hemos reducido el tamaño de las columnas de las galerías de imágenes y las hemos puesto en una sola columna.*/
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 600px) {
+    
+    /*ESTILO PARA LA PÁGINA INDEX*/
+    /*PÁGINA PRINCIPAL DE INDEX*/
+    #h1-head {
+        font-size: 100%;
+    }
+
+    #boton_haz_tu_pedido {
+        font-size: 50%;
+        height: 50px;
+        width: 75%;
+    }
+
+    .visible-on-mobile {
+        display: none;
+    }
+
+    nav {
+        margin-right: 25%;
+        margin-left: 10%;
+    }
+    
+    nav a {
+        margin: 20%;
+        font-size: 100%;
+    }
+
+    #hamburguesa {
+        width: 7%;
+        height: 5%;
+        top: 4%;
+        right: 10%;
+    }
+
+    #container-links a{    
+        margin-top: 100%;
+        font-size: 50%;
+    }
+
+    #container {
+        display: none;
+    }
+
+    #container_tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0%;
+        margin-top: 10%;
+    }
+
+    #boton_haz_tu_pedido_tablet {
+        font-size: 100%;
+        height: 70px;
+        width: 150%;
+        margin-left: -20%;
+    }
+
+    #pagina1 {
+        display: none;
+    }
+
+    #pagina2 {
+        display: none;
+    }
+
+    /*ESTILO PÁGINA RESERVAR*/
+
+    #reservar-bod{
+        background-image: none;
+    }
+    
+    #contenedor_texto_reservar {
+        max-width: 70%;
+        padding: 10px;
+        margin-left: 12%;
+        margin-top: 15%;
+    }
+    
+    #contenedor_texto_reservar h2 {
+        font-size: 100%;
+    }
+
+    /*ESTILO PÁGINA HACERPEDIDO*/
+
+    .producto {
+        width: 50%;
+        margin-left: 19%;
+        font-size: 70%;
+    }
+
+    .menu-header h1{
+        font-size: 80%;
+        margin-left: 3%;
+    }
+
+    .menu-header #h1-head{
+        font-size: 100%;
+        margin-left: 0%;
+    }
+
+    #paso-3 h2{
+        font-size: 80%;   
+    }
+
+    #paso-3 p{
+        font-size: 80%; 
+    }
+
+    #contador-superior-elementos {
+        margin-right: 10%;
+    }
+
+    #boton-siguiente-2-3 {
+        margin-left: -14%;
+    }
 
 }

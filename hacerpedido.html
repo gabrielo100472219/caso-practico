@@ -15,6 +15,16 @@
                 <a href="index.html">INICIO</a>
                 <a href="menu.html">MENÚ</a>
             </nav>
+            <!-- Menú de hamburguesa para los diferentes links a la página -->
+            <button id="hamburguesa">&#9776;</button>
+            <div id="container-links">
+                <div class="link"><a href="index.html" class="texto-link">INICIO</a></div>
+                <div class="link"><a href="hacerpedido.html" class="texto-link">HACER UN PEDIDO</a></div>
+                <div class="link"><a href="reservar.html" class="texto-link">RESERVAR UNA  MESA</a></div>
+                <div class="link"><a href="menu.html" class="texto-link visible-on-mobile">MENU</a></div>
+                <div class="link"><a href="informacion.html" class="texto-link visible-on-mobile">CONTACTO</a></div>
+                <div class="link"><a href="usuario.html" class="texto-link visible-on-mobile">REGÍSTRATE</a></div>
+            </div>
             <div id="contador-superior-elementos">0</div>
         </header>
         <div id="barra-superior-pasos">
@@ -182,8 +192,10 @@
                     </form>
                 </div>
                 <!-- Botón "Siguiente Paso" para Paso 2 -->
-                <button style="display: none;" id="boton-siguiente-2-3">Siguiente Paso</button>
-                <button id="boton-anterior-2-3">Paso anterior</button>
+                <div id="contenedor-botones">
+                    <button id="boton-anterior-2-3">Paso anterior</button>
+                    <button style="display: none;" id="boton-siguiente-2-3">Siguiente Paso</button>
+                </div>
             </div>
             <div id="paso-3" style="display: none;">
                 <h2>Estado del Pedido</h2>
@@ -197,5 +209,6 @@
             </div>
         </main>
         <script src="javascripts/hacerpedidoscript.js"></script>
+        <script src="javascripts/script.js"></script>
     </body>
 </html>

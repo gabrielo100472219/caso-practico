@@ -66,8 +66,6 @@ function actualizarTotalPrecio() {
       // Update precioTotal based on the quantity and price of the current product
       precioTotal += cantidad * price;
   });
-
-  // Display the total quantity and total price in the #precio-total-cantidad element
   precioTotalProductos.textContent = `${precioTotal.toFixed(2)}€`;
 }
 
