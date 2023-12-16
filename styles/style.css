@@ -36,7 +36,7 @@ body, html {
     font-style: normal;
 }
 
-#header1 {
+#header {
     background-color:#6F261F;
     color: #000000;
     padding: 0.5%;
@@ -45,14 +45,6 @@ body, html {
     align-items: center;
 }
 
-#header2 {
-    background-color:#6F261F;
-    color: #000000;
-    padding: 0.5%;
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-}
 
 #h1-head {
     color: #E6DBC9;
@@ -119,6 +111,42 @@ main > section {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
 }
 
+#boton_haz_tu_pedido_tablet {
+    font-size: 100%;
+    height: 70px;
+    width: 150%;
+    background-color: #AD2621; /* Color de fondo del botón */
+    font-family: 'ThunderBold', Arial, sans-serif;
+    color: #E6DBC9; /* Color del texto del botón */
+    border: none;
+    border-radius: 30%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    margin-left: 90%;
+}
+
+
+#container_encima_tablet { /* Ajusta el margin entre el texto y el botón */
+    color: #AD2621;
+    font-family: 'ThunderBold', Arial, sans-serif;
+}
+
+#aut_tablet {
+    font-size: 150%;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    margin-left: 10%;
+}
+
+#container_tablet {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    font-size: 150%;
+    margin-left: 20%;
+    height: 100%;
+}
+
 a {
     text-decoration: none; /* Quita el subrayado predeterminado */
     color: inherit; /* Hereda el color del texto del contenedor */
@@ -142,7 +170,6 @@ a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-left: 75%;
     font-family: 'ThunderBold', Arial, sans-serif;
-    text-align: justify;
 }
 
 #contenedor_texto h2 {
@@ -166,16 +193,21 @@ a {
 
 #google-maps {
     height: 50%;
-    margin-top: 20%;
+    margin-top: 15%;
     border-radius: 5%;
     margin-left: 10%;
+}
+
+#google-maps iframe {
+    height: 100%;
+    border-radius: 5%;
 }
 
 
 #reseñas-container {
     text-align: center;
     border-radius: 5%;
-    margin-top: 20%;
+    margin-top: 15%;
     background-color: #E6DBC9;
     height: 20%;
     margin-left: 3.8%;
@@ -190,7 +222,7 @@ a {
 
 #reseña {
     position: absolute;
-    bottom: -198%;
+    bottom: -190%;
     right: 47%;
     color: #000000;
     font-family: 'ThunderBold', Arial, sans-serif;
@@ -199,13 +231,13 @@ a {
 
 #labelres {
     position: absolute;
-    bottom: -192%;
-    right: 49%;
+    bottom: -183%;
+    right: 48.5%;
 }
 
 #boton-input {
     position: absolute;
-    bottom: -202%;
+    bottom: -193%;
     right: 49%;
     background-color: #AD2621; /* Color de fondo del botón */
     color: #E6DBC9;
@@ -218,7 +250,7 @@ a {
     color: #000000;
     background-color: #E6DBC9;
     height: 30%;
-    margin-top: 20%;
+    margin-top: 15%;
     margin-right: 10%;
     padding: 5% 3.4%;
 }
@@ -369,6 +401,22 @@ button.boton-suma, button.boton-resta {
     margin-left: 90%;
 }
 
+#boton-anterior-2-3 {
+    background-color: #AD2621; /* Color de fondo del botón */
+    font-family: 'ThunderBold', Arial, sans-serif;
+    color: #E6DBC9; /* Color del texto del botón */
+    border-radius: 15%;
+    margin-right: 80%;
+}
+
+#boton-anterior-3 {
+    background-color: #AD2621; /* Color de fondo del botón */
+    font-family: 'ThunderBold', Arial, sans-serif;
+    color: #E6DBC9; /* Color del texto del botón */
+    border-radius: 15%;
+    margin-right: 80%;
+}
+
 /* Estilo del Paso 2 */
 #paso-2 {
     display: none; /* Inicialmente oculto */
@@ -484,7 +532,7 @@ button.boton-suma, button.boton-resta {
     border-radius: 5px; 
     cursor: pointer; 
 
-}
+} 
 
 /* Estilos para los enlaces */
 .link{
@@ -509,7 +557,6 @@ button.boton-suma, button.boton-resta {
     background-color: #E6DBC9;
     color: #AD2621;
     font-family: 'ThunderBold', Arial, sans-serif;
-    text-align: justify;
 }
 
 #contenedor_menu h2 {
@@ -707,12 +754,7 @@ button.boton-suma, button.boton-resta {
     cursor: pointer;
 }
 
-  /*media queries para hacer la página responsive, utilizaremos cinco breakpoint: para ordenadores portátiles, para ordenadores portátiles pequeños (1226px), para tablets (768px), para (600px) y para móviles*/
-/*media para ordenadores portátiles.*/
-@media screen and (max-width: 1600px) {
-
-}
-/*media para ordenadores pequeños. Lo que haremos será reducir el tamaño de la fuente para que se pueda adaptar a la pantalla.*/
+/*media para ordenadores pequeños.*/
 @media screen and (max-width: 1300px) {
 
     /*ESTILO PARA LA PÁGINA INDEX*/
@@ -763,7 +805,6 @@ button.boton-suma, button.boton-resta {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         margin-left: 70%;
         font-family: 'ThunderBold', Arial, sans-serif;
-        text-align: justify;
     }
     
     #contenedor_texto h2 {
@@ -795,9 +836,14 @@ button.boton-suma, button.boton-resta {
         top: -30%;
     }
     
-    #reseña-input {
+    #reseña {
         bottom: -200%;
         right: 42%;
+    }
+
+    #labelres {
+        bottom: -190%;
+        right: 45%;
     }
     #boton-input {
         bottom: -205%;
@@ -911,16 +957,249 @@ button.boton-suma, button.boton-resta {
     }
 }
 
-/*media para tablets.*/
-/*en este caso reducimos el tamaño de los caracteres y del logo de la página web. También hemos sustituido el título de la página principal para que se muestre mejor el logo y el vídeo.*/
+/*media para tablets. Resolución 768 x 480*/
+
 @media screen and (max-width: 768px) {
 
-    #header1 {
+    /*ESTILO PARA LA PÁGINA INDEX*/
+    /*PÁGINA PRINCIPAL DE INDEX*/
+    #h1-head {
+        font-size: 100%;
+    }
+
+
+    #boton_haz_tu_pedido {
+        font-size: 150%;
+        height: 100px;
+        width: 150%;
+    }
+
+    #aut {
+        font-size: 200%;
+    }
+
+    nav {
+        margin-right: 25%;
+        margin-left: 10%;
+    }
+    
+    nav a {
+        margin: 20%;
+        font-size: 100%;
+    }
+
+    #hamburguesa {
+        width: 3.5%;
+        height: 6%;
+        top: 4%; /* Distancia desde la parte superior de la ventana */
+        right: 92%; /* Distancia desde el lado derecho de la ventana */
+    }
+
+    #container {
         display: none;
     }
 
-    #header2 {
+    #container_tablet {
         display: flex;
+    }
+
+    /*ESTILO PÁGINA 1 DE INDEX*/
+
+    #pagina1 {
+        background-image: url(../image/fondoSec22-tablet.png);
+        background-position-y: 10%;
+    }
+    
+    #contenedor_texto {
+        margin-top: 8%;
+    }
+
+    #contenedor_texto h2 {
+        font-size: 80%;
+    }
+    
+    #contenedor_texto p {
+        font-size: 65%;
+    }
+
+    /*PÁGINA 2 DE INDEX*/
+
+    #google-maps {
+        height: 80%;
+        width: 30%;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    #google-maps iframe {
+        width: 95%;
+    }    
+    
+    #reseñas-container {
+        margin-top: 5%;
+        height: 56%;
+        margin-left: 2%;
+        padding: 7.5% 10%;
+    }
+    
+    #reseñas-list {
+        position: relative;
+        top: -5%;
+        font-size: 70%;
+    }
+    
+    #reseña {
+        bottom: -205%;
+        height: 10%;
+        width: 10%;
+        right: 42.5%;
+    }
+
+    #labelres {
+        bottom: -192%;
+        right: 45%;
+        font-size: 50%;
+    }
+
+    #boton-input {
+        bottom: -210%;
+        right: 44.5%;
+        font-size: 50%;
+    }
+    
+    #text-box {
+        height: 64%;
+        margin-top: 5%;
+        margin-right: 3.8%;
+        width: 20%;
+    }
+    
+    #text-box h2 {
+        font-size: 100%;
+        top: 0%;
+    }
+    
+    #text-box p {
+        top: 15%;
+        font-size: 70%;
+    }
+    
+    .texto-superpuesto {
+        top: -8%;
+        font-size: 100%;
+    }
+
+    /*ESTILO PARA LA PÁGINA MENÚ*/
+
+    #contenedor_menu h2{
+        font-size: 70%;
+    }
+
+    #contenedor_menu p{
+        font-size: 70%;
+    }
+
+    /*ESTILO PARA PÁGINA USUARIO*/
+
+    .formulario-usuario {
+        max-width: 30%;
+        padding: 5px;
+        margin-top: 0.5%;
+    }
+    
+    .formulario-usuario h2 {
+        font-size: 100%;
+        display: none;
+    }
+
+    #contenedor-usuario {
+        padding: 5%;
+        border-radius: 5%;
+    }
+    
+    #contenedor-usuario label,
+    #contenedor-usuario input {
+      width: 80%;
+      margin-left: 9%;
+      font-size: 70%;
+    }
+
+    #contenedor-usuario button {
+        margin-left: 9%;
+        background-color:#AD2621; /* Color de fondo del botón */
+        color: #E6DBC9;
+        font-family: 'Thunder', Arial, sans-serif;
+        cursor: pointer;
+    }
+
+    /*ESTILO PÁGINA HACERPEDIDO*/
+
+    .producto {
+        width: 15%; /* Ancho del 10% del contenedor */
+        margin-left: 4.2%;
+        font-size: 16px;
+    }
+
+    .menu-header h1{
+        font-size: 80%;
+    }
+
+    .menu-header #h1-head{
+        font-size: 100%;
+    }
+
+    #paso-3 h2{
+        font-size: 80%;   
+    }
+
+    #paso-3 p{
+        font-size: 80%; 
+    }
+
+    /*ESTILO PÁGINA INFORMACIÓN*/
+
+    #informacion-bod{
+        background-image: url(../image/informacionFondo-tablet.png);
+        background-position-x: 30%;
+        background-position-y: 60%;
+    }
+
+    #contenedor_texto_info {
+        max-width: 20%;
+        padding: 10px;
+        margin-top: 3%;
+    }
+
+    #contenedor_texto_info h2{
+        font-size: 100%;
+    }
+    
+    
+    .formulario textarea {
+        height: 50px; 
+    }
+
+    #boton_info{
+        margin-left: 26%;
+    }
+
+    /*ESTILO PÁGINA RESERVAR*/
+
+    #reservar-bod{
+        background-image: url(../image/reservarFondo-tablet.png);
+        background-position-x: 65%;
+        background-position-y: 60%;
+    }
+    
+    #contenedor_texto_reservar {
+        max-width: 20%;
+        padding: 10px;
+        margin-left: 8%;
+        margin-top: 5%;
+    }
+    
+    #contenedor_texto_reservar h2 {
+        font-size: 100%;
     }
 
 }

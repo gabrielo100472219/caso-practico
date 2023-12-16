@@ -13,6 +13,8 @@ const paso2 = document.getElementById("paso-2"); // Paso 2
 const paso3 = document.getElementById("paso-3"); // Paso 3
 const siguienteBoton12 = document.getElementById("boton-siguiente-1-2"); // Botón "Siguiente Paso de 1 a 2"
 const siguienteBoton23 = document.getElementById("boton-siguiente-2-3"); // Botón "Siguiente Paso de 2 a 3"
+const anteriorBoton23 = document.getElementById("boton-anterior-2-3"); // Botón "Siguiente Paso de 2 a 3"
+const anteriorBoton3 = document.getElementById("boton-anterior-3"); // Botón "Siguiente Paso de 2 a 3"
 const pasosBarraSup = document.getElementById("barra-superior-pasos"); // Barra de progreso
 
     
@@ -104,7 +106,6 @@ function empezarTemporizador(durazion) {
     }, 1000); // El intervalo se ejecuta cada segundo (1000 milisegundos)
 }
 
-
 // Función para pasar al Paso 2
 function cambiarSegundoPaso() {
     // Ocultar Paso 1
@@ -175,6 +176,20 @@ siguienteBoton23.addEventListener("click", function () {
     cambiarTercerPaso();
 });
 
+function retrocederSegundoPaso() {
+    paso3.style.display = "none"; // Ocultar Paso 3
+    paso2.style.display = "block"; // Mostrar Paso 2
+
+    // Actualizar la barra de progreso para el Paso 2
+    pasosBarraSup.children[3].classList.remove("cambio-azul");
+    pasosBarraSup.children[4].classList.remove("cambio-azul");
+}
+
+// Agregar oyente de evento al botón "Anterior Paso 3"
+anteriorBoton3.addEventListener("click", function () {
+    retrocederSegundoPaso();
+});
+
 function cargarSeleccionesDeLocalStorage() {
   const seleccionesGuardadas = JSON.parse(localStorage.getItem('seleccionesMenu'));
   if (seleccionesGuardadas) {
@@ -185,6 +200,20 @@ function cargarSeleccionesDeLocalStorage() {
       actualizarTotalPrecio(); // Update the total price
   }
 }
+
+function retrocederPrimerPaso() {
+    paso2.style.display = "none"; // Ocultar Paso 2
+    paso1.style.display = "block"; // Mostrar Paso 1
+
+    // Actualizar la barra de progreso para el Paso 1
+    pasosBarraSup.children[1].classList.remove("cambio-azul");
+    pasosBarraSup.children[2].classList.remove("cambio-azul");
+}
+
+// Agregar oyente de evento al botón "Anterior Paso 2"
+anteriorBoton23.addEventListener("click", function () {
+    retrocederPrimerPaso();
+});
 
 
 //Función para validar la tarjeta de crédito, donde comprobamos con expresiones regulares que el número de la tarjeta tenga 16 dígitos, la fecha se escriba MM/YY y el número CVV tenga 3 números.
@@ -211,5 +240,6 @@ function validarTarjeta() {
     }
     // Si todo está bien, aparece una alareta de que puedes ver el estado del pedido pulsando el botón de siguiente paso que aparecerá al pulsar el botón de pagar.
     alert('¡Pago aceptado! Puedes ver el estado de tu pedido pulsando el botón "Siguiente paso"');
+    document.getElementById('boton-anterior-2-3').style.display = 'block';
     document.getElementById('boton-siguiente-2-3').style.display = 'block';
 }
