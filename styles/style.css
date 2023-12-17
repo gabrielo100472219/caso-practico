@@ -492,6 +492,7 @@ button.boton-suma, button.boton-resta {
 #contador {
     font-size: 200%;
 }
+
 .barra-superior-pasos {
     width: 40%; /* Ancho del 40% del contenedor */
     background-color: #ccc; /* Fondo de color gris claro */
@@ -924,7 +925,7 @@ button.boton-suma, button.boton-resta {
         font-size: 16px;
     }
 
-    .menu-header h1{
+    .menu-header h2{
         font-size: 100%;
     }
 
@@ -1153,7 +1154,7 @@ button.boton-suma, button.boton-resta {
         font-size: 16px;
     }
 
-    .menu-header h1{
+    .menu-header h2{
         font-size: 80%;
         margin-left: 0%;
     }
@@ -1317,7 +1318,7 @@ button.boton-suma, button.boton-resta {
         font-size: 70%;
     }
 
-    .menu-header h1{
+    .menu-header h2{
         font-size: 80%;
         margin-left: 3%;
     }
