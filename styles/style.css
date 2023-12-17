@@ -1,3 +1,7 @@
+
+/*ARCHIVO DE ESTILOS PARA LOS DIFERENTES DOCUMENTOS HTML DE NUESTRA PÁGINA WEB*/
+
+
 /* Añadimos distintos formatos para body, html, header (en nuestro caso no utilizamos header, si lo añadiésemos tendría ese formato) y footer */
 body, html {
     font-family: 'Thunder', Arial, sans-serif; /* Se intentará cargar Thunder, si no está disponible se utilizará Arial, y si eso falla, se usará una fuente genérica sans-serif. */
@@ -296,7 +300,7 @@ h1 {
 #contador-superior-elementos {
     font-size: 14px; /* Tamaño de fuente de 14px */
     padding: 3px 6px; /* Relleno de 3px arriba y abajo, 6px a la izquierda y derecha */
-    background-color: #AD2621; /* Fondo de color rojizo */
+    background-color: #E6DBC9; /* Fondo de color rojizo */
     border-radius: 50%; /* Borde redondeado al 50% para formar un círculo */
     margin-left: 5px; /* Margen a la izquierda de 5px */
     display: inline-block; /* Se muestra en línea con otros elementos */
@@ -1220,7 +1224,7 @@ button.boton-suma, button.boton-resta {
 }
 
 
-/* Media para móviles.*/
+/* Media para móviles. resolución 600px*/
 @media screen and (max-width: 600px) {
     
     /* ESTILO PARA LA PÁGINA INDEX */
