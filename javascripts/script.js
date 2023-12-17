@@ -97,3 +97,15 @@ var menu = document.getElementById('container-links');
 botonHamburguesa.addEventListener('click', function() {
   menu.classList.toggle('mostrar');
 });
+
+
+var botonhaztupedido = document.getElementById('boton_haz_tu_pedido');
+botonhaztupedido.addEventListener('click', function() {
+  window.location.href = 'hacerpedido.html';
+});
+
+
+var botonhaztupedidot = document.getElementById('boton_haz_tu_pedido_tablet');
+botonhaztupedidot.addEventListener('click', function() {
+  window.location.href = 'hacerpedido.html';
+});
